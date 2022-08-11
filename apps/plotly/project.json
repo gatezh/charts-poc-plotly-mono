@@ -12,8 +12,8 @@
         "outputPath": "dist/apps/plotly",
         "index": "apps/plotly/src/index.html",
         "baseHref": "/",
-        "main": "apps/plotly/src/main.tsx",
-        "polyfills": "apps/plotly/src/polyfills.ts",
+        "main": "apps/plotly/src/main.js",
+        "polyfills": "apps/plotly/src/polyfills.js",
         "tsConfig": "apps/plotly/tsconfig.app.json",
         "assets": ["apps/plotly/src/favicon.ico", "apps/plotly/src/assets"],
         "styles": [],
@@ -30,8 +30,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/plotly/src/environments/environment.ts",
-              "with": "apps/plotly/src/environments/environment.prod.ts"
+              "replace": "apps/plotly/src/environments/environment.js",
+              "with": "apps/plotly/src/environments/environment.prod.js"
             }
           ],
           "optimization": true,
@@ -71,7 +71,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/plotly"],
       "options": {
-        "jestConfig": "apps/plotly/jest.config.ts",
+        "jestConfig": "apps/plotly/jest.config.js",
         "passWithNoTests": true
       }
     }
